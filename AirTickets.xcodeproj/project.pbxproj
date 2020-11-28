@@ -14,6 +14,8 @@
 		B1238601256C3469000EC976 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238600256C3469000EC976 /* City.m */; };
 		B1238605256C3478000EC976 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238604256C3478000EC976 /* Country.m */; };
 		B123860A256C3DC2000EC976 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238609256C3DC2000EC976 /* DataManager.m */; };
+		B15F27EC257276D2006727FB /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F27EB257276D2006727FB /* PlaceViewController.m */; };
+		B15F27F02572C613006727FB /* SearchRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = B15F27EF2572C613006727FB /* SearchRequest.h */; };
 		B1FCFE5D256423BC0000622A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FCFE5C256423BC0000622A /* AppDelegate.m */; };
 		B1FCFE60256423BC0000622A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FCFE5F256423BC0000622A /* SceneDelegate.m */; };
 		B1FCFE63256423BC0000622A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FCFE62256423BC0000622A /* MainViewController.m */; };
@@ -34,6 +36,9 @@
 		B1238604256C3478000EC976 /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 		B1238608256C3DC2000EC976 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		B1238609256C3DC2000EC976 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		B15F27EA257276D2006727FB /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		B15F27EB257276D2006727FB /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		B15F27EF2572C613006727FB /* SearchRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
 		B1FCFE58256423BC0000622A /* AirTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FCFE5B256423BC0000622A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1FCFE5C256423BC0000622A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 				B1238600256C3469000EC976 /* City.m */,
 				B1238603256C3478000EC976 /* Country.h */,
 				B1238604256C3478000EC976 /* Country.m */,
+				B15F27EF2572C613006727FB /* SearchRequest.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +123,8 @@
 				B1FCFE5F256423BC0000622A /* SceneDelegate.m */,
 				B1FCFE61256423BC0000622A /* MainViewController.h */,
 				B1FCFE62256423BC0000622A /* MainViewController.m */,
+				B15F27EA257276D2006727FB /* PlaceViewController.h */,
+				B15F27EB257276D2006727FB /* PlaceViewController.m */,
 				B1FCFE67256423BE0000622A /* Assets.xcassets */,
 				B1FCFE69256423BE0000622A /* LaunchScreen.storyboard */,
 				B1FCFE6C256423BE0000622A /* Info.plist */,
@@ -197,12 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15F27EC257276D2006727FB /* PlaceViewController.m in Sources */,
 				B1238605256C3478000EC976 /* Country.m in Sources */,
 				B1FCFE63256423BC0000622A /* MainViewController.m in Sources */,
 				B12385FC256C3458000EC976 /* Airport.m in Sources */,
 				B1238601256C3469000EC976 /* City.m in Sources */,
 				B1FCFE5D256423BC0000622A /* AppDelegate.m in Sources */,
 				B123860A256C3DC2000EC976 /* DataManager.m in Sources */,
+				B15F27F02572C613006727FB /* SearchRequest.h in Sources */,
 				B1FCFE6E256423BE0000622A /* main.m in Sources */,
 				B1FCFE60256423BC0000622A /* SceneDelegate.m in Sources */,
 			);
