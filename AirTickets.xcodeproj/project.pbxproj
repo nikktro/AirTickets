@@ -15,6 +15,9 @@
 		B1238601256C3469000EC976 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238600256C3469000EC976 /* City.m */; };
 		B1238605256C3478000EC976 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238604256C3478000EC976 /* Country.m */; };
 		B123860A256C3DC2000EC976 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1238609256C3DC2000EC976 /* DataManager.m */; };
+		B12A16EF257FFD5E00396E9E /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = B12A16EE257FFD5E00396E9E /* MapPrice.m */; };
+		B12A16F32580062D00396E9E /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B12A16F22580062D00396E9E /* LocationManager.m */; };
+		B12A16F725804F6400396E9E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12A16F625804F6400396E9E /* MapViewController.m */; };
 		B15F27EC257276D2006727FB /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F27EB257276D2006727FB /* PlaceViewController.m */; };
 		B15F27F02572C613006727FB /* SearchRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = B15F27EF2572C613006727FB /* SearchRequest.h */; };
 		B18F91202573236C00313F36 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B18F911F2573236C00313F36 /* APIManager.m */; };
@@ -42,6 +45,12 @@
 		B1238604256C3478000EC976 /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 		B1238608256C3DC2000EC976 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		B1238609256C3DC2000EC976 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		B12A16ED257FFD5E00396E9E /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		B12A16EE257FFD5E00396E9E /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		B12A16F12580062D00396E9E /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		B12A16F22580062D00396E9E /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		B12A16F525804F6400396E9E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B12A16F625804F6400396E9E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B15F27EA257276D2006727FB /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		B15F27EB257276D2006727FB /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		B15F27EF2572C613006727FB /* SearchRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
@@ -111,6 +120,8 @@
 				B18F91232576032800313F36 /* Ticket.h */,
 				B18F91242576032800313F36 /* Ticket.m */,
 				B15F27EF2572C613006727FB /* SearchRequest.h */,
+				B12A16ED257FFD5E00396E9E /* MapPrice.h */,
+				B12A16EE257FFD5E00396E9E /* MapPrice.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,8 +133,25 @@
 				B1238609256C3DC2000EC976 /* DataManager.m */,
 				B18F911E2573236C00313F36 /* APIManager.h */,
 				B18F911F2573236C00313F36 /* APIManager.m */,
+				B12A16F12580062D00396E9E /* LocationManager.h */,
+				B12A16F22580062D00396E9E /* LocationManager.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		B12A17222581791D00396E9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1FCFE61256423BC0000622A /* MainViewController.h */,
+				B1FCFE62256423BC0000622A /* MainViewController.m */,
+				B15F27EA257276D2006727FB /* PlaceViewController.h */,
+				B15F27EB257276D2006727FB /* PlaceViewController.m */,
+				B18F9138257611E900313F36 /* TicketsTableViewController.h */,
+				B18F9139257611E900313F36 /* TicketsTableViewController.m */,
+				B12A16F525804F6400396E9E /* MapViewController.h */,
+				B12A16F625804F6400396E9E /* MapViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B18F912C25760C6B00313F36 /* Cells */ = {
@@ -159,16 +187,11 @@
 				B12385F9256C33E4000EC976 /* Models */,
 				B1238607256C3D63000EC976 /* Managers */,
 				B18F912C25760C6B00313F36 /* Cells */,
+				B12A17222581791D00396E9E /* ViewControllers */,
 				B1FCFE5B256423BC0000622A /* AppDelegate.h */,
 				B1FCFE5C256423BC0000622A /* AppDelegate.m */,
 				B1FCFE5E256423BC0000622A /* SceneDelegate.h */,
 				B1FCFE5F256423BC0000622A /* SceneDelegate.m */,
-				B1FCFE61256423BC0000622A /* MainViewController.h */,
-				B1FCFE62256423BC0000622A /* MainViewController.m */,
-				B15F27EA257276D2006727FB /* PlaceViewController.h */,
-				B15F27EB257276D2006727FB /* PlaceViewController.m */,
-				B18F9138257611E900313F36 /* TicketsTableViewController.h */,
-				B18F9139257611E900313F36 /* TicketsTableViewController.m */,
 				B1FCFE67256423BE0000622A /* Assets.xcassets */,
 				B1FCFE69256423BE0000622A /* LaunchScreen.storyboard */,
 				B1FCFE6C256423BE0000622A /* Info.plist */,
@@ -301,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12A16F32580062D00396E9E /* LocationManager.m in Sources */,
 				B15F27EC257276D2006727FB /* PlaceViewController.m in Sources */,
 				B1238605256C3478000EC976 /* Country.m in Sources */,
 				B1FCFE63256423BC0000622A /* MainViewController.m in Sources */,
@@ -310,10 +334,12 @@
 				B123860A256C3DC2000EC976 /* DataManager.m in Sources */,
 				B15F27F02572C613006727FB /* SearchRequest.h in Sources */,
 				B1FCFE6E256423BE0000622A /* main.m in Sources */,
+				B12A16EF257FFD5E00396E9E /* MapPrice.m in Sources */,
 				B18F913A257611E900313F36 /* TicketsTableViewController.m in Sources */,
 				B1FCFE60256423BC0000622A /* SceneDelegate.m in Sources */,
 				B18F91202573236C00313F36 /* APIManager.m in Sources */,
 				B18F91252576032800313F36 /* Ticket.m in Sources */,
+				B12A16F725804F6400396E9E /* MapViewController.m in Sources */,
 				B18F912F25760C9D00313F36 /* TicketTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

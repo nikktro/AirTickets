@@ -7,6 +7,7 @@
 
 #import "APIManager.h"
 #import "DataManager.h"
+#import "MapPrice.h"
 #import "City.h"
 #import "Ticket.h"
 
@@ -66,6 +67,29 @@
                 completion(tickets);
             });
         }];
+}
+
+- (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion {
+    static BOOL isLoading;
+    if (isLoading) return;
+    isLoading = YES;
+    
+    NSString *url = [NSString stringWithFormat:@"%@%@", API_URL_MAP_PRICE, origin.code];
+    [self load:url withCompletion:^(id  _Nullable result) {
+        NSMutableArray *prices;
+        if ([result isKindOfClass:[NSArray class]]) {
+            NSArray *array = result;
+            prices = [[NSMutableArray alloc] initWithCapacity:array.count];
+            for (NSDictionary *dict in array) {
+                MapPrice *price = [[MapPrice alloc] initWithDictionary:dict withOrigin:origin];
+                [prices addObject:price];
+            }
+        }
+        isLoading = NO;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(prices);
+        });
+    }];
 }
 
 - (void)IPAddressWithCompletion:(void (^)(NSString *ipAddress))completion {
